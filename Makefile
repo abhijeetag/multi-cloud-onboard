@@ -5,9 +5,9 @@ install:
 		pip install -r requirements.txt
 
 test:
-	echo "Running tests..."  # Replace with actual test commands
+	echo "No tests specified..."  
 
 lint:
-	echo "Linting code..."  # Replace with actual linting commands
+	pylint --disable=R,C hello.py
 
 all: install lint test

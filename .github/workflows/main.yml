@@ -1,0 +1,41 @@
+# Workflow template for multi-cloud-onboard project
+
+name: Python application setup with GitHub Actions
+
+on:
+  push:
+    branches: [master]
+  # Uncomment the following lines if you want the workflow to run on pull requests
+  # pull_request:
+  #   branches: [master]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v2
+      
+      - name: Setup Python 3.8
+        uses: actions/setup-python@v1
+        with:
+          python-version: 3.8
+
+      - name: Install dependencies
+        run: |
+          make install
+
+      - name: Lint with pylint
+        run: |
+          make lint
+
+      - name: Test with pytest
+        run: |
+          make test
+
+      - name: Format code
+        run: |
+          make format
+
+    
+    

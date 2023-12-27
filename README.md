@@ -1,3 +1,5 @@
+[![Python application setup with GitHub Actions](https://github.com/abhijeetag/multi-cloud-onboard/actions/workflows/main.yml/badge.svg)](https://github.com/abhijeetag/multi-cloud-onboard/actions/workflows/main.yml)
+
 # multi-cloud-onboard
 This is a sample github repo for doing multi-cloud onboadring. Works with AWS, Azure and GCP
 Example reference: https://github.com/noahgift/flask-ml-azure-serverless

@@ -2,12 +2,7 @@
 
 name: Python application setup with GitHub Actions
 
-on:
-  push:
-    branches: [master]
-  # Uncomment the following lines if you want the workflow to run on pull requests
-  # pull_request:
-  #   branches: [master]
+on: [push]
 
 jobs:
   build:
